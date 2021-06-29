@@ -95,3 +95,60 @@ Aula 75
       systemctl restart networking
 
       reboot - Reinicia o sistema operacional
+      
+      
+      
+AULA 79 
+	vim.tiny - VIM mais simples, que vem junto com o Debian
+
+vimtutor - Tutorial que ensina os passo
+
+Instalar a versão completa do VIM
+	apt update
+	apt install vim -y
+		-y - Confirma automaticamente [Yes]
+Criar arquivo no VIM
+
+	Vim [nome-do-arquivo]
+
+	VÁRIOS MODOS DO VIM
+		MODO NORMAL [ESC]
+			pode usar comandos 
+				:
+				:set number
+				:colorscheme [tema]
+
+				:w - salvar
+				:w [nome do novo arquivo] - salvar em um outro arquivo
+
+				:q - sair do VIM
+				:wq - Salvar e sair
+				:q! - Força o VIM a sair
+
+				x - Apagar um caractere
+				
+				dw [delete word] - Apagar a palavra onde o cursor esta
+
+				d2w - Apagar duas palavras depois do cursor
+
+				d$ - Apaga todas as palavras até o fim da linha
+
+				dd - Apagar a linha inteira
+
+				[número de linhas]dd - Apagar várias linhas
+
+				u [undo] - Desfaz a ultima alteração
+
+				Ctrl + r [redo] - Refaz a ultima alteração
+
+				yy - copia uma linha inteira
+				[número de linhas] - copia mais de uma linha
+
+				p [paste] - colar o texto com o "y"
+
+		MODO DE INSERÇÃO 
+			i - Inserção
+
+		MODO VISUAL
+			v - Visual
+				y [yank] - copiar o texto selecionado
